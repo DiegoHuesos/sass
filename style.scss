@@ -1,0 +1,12 @@
+$color-principal: #2980b9;
+$color-secundario: #ff00dc;
+
+* {
+	@include resets();
+}
+
+@mixin resets(){
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
