@@ -1,12 +1,25 @@
 $color-principal: #2980b9;
 $color-secundario: #ff00dc;
 
-* {
-	@include resets();
-}
-
-@mixin resets(){
+@mixin resets{
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
+* {
+	@include resets();
+}
+
+a:link , a:visited{
+	text-decoration: none;
+	color: $color-secundario;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.2s;
+}
+
+a:after, a:hover{
+	border-bottom: 2px solid $color-principal;
+}
+
+/*sass --watch input.scss output.css*/

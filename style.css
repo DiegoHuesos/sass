@@ -1,17 +1,20 @@
-/* Error: Undefined mixin.
- *   ,
- * 5 |     @include resets();
- *   |     ^^^^^^^^^^^^^^^^^
- *   '
- *   style.scss 5:2  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502      @include resets();\d\a   \2502      ^^^^^^^^^^^^^^^^^\a   \2575 \a   style.scss 5:2  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #ff00dc;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+a:after, a:hover {
+  border-bottom: 2px solid #2980b9;
+}
+
+/*sass --watch input.scss output.css*/
+
+/*# sourceMappingURL=style.css.map */
